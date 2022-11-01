@@ -11,5 +11,10 @@ protobuf==3.20.0
 sklearn
 opencv-python
 fastai
+torch==1.11.0
 timm
 transformers
+ipykernel
+huggingface_hub[fastai]
+dill
+gradio
