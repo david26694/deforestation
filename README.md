@@ -10,10 +10,11 @@ Code for the deforestation datathon. Group: Random For(r)est Gump
 
     ├── README.md                   <- The top-level README for developers using this project.
     ├── src                
-    │   ├── fast_nn.py              <- ?
-    │   ├── reoder_json.py          <- ?
+    │   ├── fast_nn.py              <- Script to train of the resnet NN with fast.ai
+    │   ├── reoder_json.py          <- Reorders the predictions
     │   ├── keras_mixed_data_NN.py  <- Multi input keras neural net (image + tabular)
     │   ├── split_data.py           <- Deterministic split for local evaluation set
+    │   ├── eda.py                  <- EDA script for tabular information
     │   └── Schneider.ipynb         <- Data exploration + tabular tests
     │
     ├── data                        <- Folder to put in data after downloading
@@ -44,11 +45,9 @@ The link to the huggingface app can be found in here: https://huggingface.co/spa
 
 You can see that the last commit is from Saturday 19th of November.
 
-You can find some of the code of the app in `app/`. Not all code is included, as big files (the model.pkl) are not uploaded to github.
+You can find some of the code of the app in `app/`. Not all code is included, as big files (the model.pkl) are not uploaded to github. You can find it in there anyway.
 
 
 ## Other files
 
 We have some files in src of things that were tried in the hackathon, they contributed to the final solution but we prefered to have it all in one file.
-
-We also have some files in pre-datathon for preparation for the datathon, we were mainly playing with image data of other datasets.
