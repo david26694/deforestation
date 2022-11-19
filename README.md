@@ -3,7 +3,7 @@
 Code for the deforestation datathon. Group: Random For(r)est Gump
 
 
-![Alt text](data/labels.png "Title")
+![Alt text](src/labels.png "Title")
 
 
 ## Project Organization
