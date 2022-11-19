@@ -1,6 +1,27 @@
-# deforestation
+# Zero deforestation mission - NUWE - Schneider Electric
 
-Code for the deforestation datathon
+Code for the deforestation datathon. Group: Random For(r)est Gump
+
+
+![Alt text](data/labels.png "Title")
+
+
+## Project Organization
+
+    ├── README.md                   <- The top-level README for developers using this project.
+    ├── src                
+    │   ├── fast_nn.py              <- ?
+    │   ├── reoder_json.py          <- ?
+    │   ├── keras_mixed_data_NN.py  <- Multi input keras neural net (image + tabular)
+    │   ├── split_data.py           <- Deterministic split for local evaluation set
+    │   └── Schneider.ipynb         <- Data exploration + tabular tests
+    │
+    ├── data                        <- Folder to put in data after downloading
+    ├── app                         <- Huggingface online inference
+    ├── main.ipynb                  <- Main script that results in final predictions for test set
+    ├── predictions.csv
+    ├── predictions.json            
+    └── requirements.txt            <- PIP requirements to run codes
 
 ## Setup
 
