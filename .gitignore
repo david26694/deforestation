@@ -133,3 +133,5 @@ artifacts/
 .vscode
 data
 
+.DS_Store
+
