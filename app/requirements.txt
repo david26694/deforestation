@@ -18,4 +18,3 @@ ipykernel
 huggingface_hub[fastai]
 dill
 gradio
-lightgbm
