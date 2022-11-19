@@ -1,3 +1,7 @@
+"""
+Trains Neural network with fastai. This script can be called before deploying the gradio app.
+"""
+
 import json
 from pathlib import Path
 
