@@ -19,10 +19,12 @@ data_path = Path("data")
 df_train = pd.read_csv(data_path / "train.csv")
 df_test = pd.read_csv(data_path / "test.csv")
 # %%
-full_df = pd.concat([
-    df_test.assign(is_train=False),
-    df_train.assign(is_train=True),
-]).fillna(-1)
+full_df = pd.concat(
+    [
+        df_test.assign(is_train=False),
+        df_train.assign(is_train=True),
+    ]
+).fillna(-1)
 sns.scatterplot(data=df_train, x="longitude", y="latitude", hue="label", size=1)
 
 # %%
@@ -56,7 +58,7 @@ fig = px.scatter_mapbox(
     mapbox_style="carto-positron",
 )
 fig.update_layout(mapbox_style="open-street-map")
-fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
 fig.show()
 
 # %%
