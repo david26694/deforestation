@@ -21,10 +21,8 @@ full_df = pd.concat([
 )
 
 # %% Add fold index in df
-i = 0
-for x, y in StratifiedKFold(n_splits=3, shuffle=True, random_state=42).split(df, df["label"]):
-    df.loc[y, "fold"] = int(i)
-    i += 1
+for index, (x, y) in enumerate(StratifiedKFold(n_splits=3, shuffle=True, random_state=42).split(df, df["label"])):
+    df.loc[y, "fold"] = int(index)
 
 # %%
 df["fold"] = df["fold"].astype(int)
